@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    font-family:"Roboto";
+}
+
+.navbar-brand{
+    color:black;
+    font-size:20px;
+    font-weight:bold;
+    margin-left:3px;
+    padding-top: 10px;
+}
+
+.StyleSphere-Homepage{
+    height:100vh;
+    background-image:url("https://wallpapers.com/images/high/fashion-store-display-i5s6es944n29q9sp.webp");
+    /* background-image:url("https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/stylesphere-bg-imagetourl.cloud-1770805128721-lq0s2o.jpg"); */
+    background-size:cover;
+}
+.Homepage-text-container{
+    display:flex;
+    flex-direction:column;
+    align-items:start;
+    justify-content:center;
+    height:100%;
+    gap:30px;
+}
+.homepage-textblock-1{
+    height:30px;
+    width:170px;
+    background-color:skyblue;
+    border-radius:20px;
+    text-align:center;
+    padding-top:4px;
+    
+}
+.home-textblock-description{
+    color:white;
+    font-size:15px;
+}
+.home-heading{
+    color:white;
+    font-size:45px;
+    font-weight:bold
+}
+.home-description{
+    color:rgb(254, 248, 248);
+    font-size:23px;
+    font-weight: 700;
+
+}
+.homepage-button{
+    height:40px;
+    width:160px;
+    background-color:skyblue;
+    border-radius:10px;
+    text-align:center;
+    color:white;
+    font-size:18px;
+    font-weight:200;
+    border-width:0px;
+    margin-right:10px;
+}
+.homepage-button2{
+    height:40px;
+    width:160px;
+    background-color: transparent;
+    border-radius:10px;
+    text-align:center;
+    color:white;
+    font-size:18px;
+    font-weight:400;
+    border-width:2px;
+    border-color: aliceblue;
+}
