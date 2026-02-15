@@ -8,50 +8,95 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <title>StyleSphereClone</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
   <div class="container">
-    <span class="logo-icon">
-    <svg width="30" height="27" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+    <span class="nav-icon-container-1">
+    <svg width="29" height="27" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24" class="nav-logo-icon">
         <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path>
         <line x1="3" y1="6" x2="21" y2="6"></line>
         <path d="M16 10a4 4 0 01-8 0"></path>
     </svg>
-    <a class="navbar-brand" href="#">StyleSphere Clone</a>
-</span>
-
+    <a class="navbar-brand " href="main.html">StyleSphere</a>
+    </span>
+    <div class=" d-flex align-items-center gap-2 ms-auto  d-lg-none">
+            <a href="all-products.html" class="text-decoration-none text-dark">
+            <span class="nav-icon-hover">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person " viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                    </svg>
+                </span>
+            </a>
+            <span class="nav-icon-hover">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+            </svg>
+            </span>
+            <a href="shopping-cart.html" class="text-decoration-none text-dark">
+            <span class="nav-icon-hover">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag " viewBox="0 0 16 16">
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+            </svg>
+            </span>
+             </a>
+    </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     
     <div class="collapse navbar-collapse " id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item ">
-          <a class="nav-link" href="#">Shop</a>
+      <ul class="navbar-nav  mb-2 mb-lg-0">
+        <li class="nav-item ms-4">
+          <a class="nav-link" href="all-products.html">Shop</a>
         </li>
         
-        <li class="nav-item">
-          <a class="nav-link" href="#">New Arrivals</a>
+        <li class="nav-item ms-4">
+          <a class="nav-link" href="new-arrivals.html">New Arrivals</a>
         </li>
         
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sale</a>
+        <li class="nav-item ms-4">
+          <a class="nav-link" href="sale.html">Sale</a>
         </li>
         
     
-      <form class="d-flex" role="Search">
+      <form class="d-flex  ms-4 ms-lg-5 ps-lg-5" role="Search">
         <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="search"/>
         <button class="btn btn-outline-dark" type="submit">Search</button>
       </form>
     </div>
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
-    </svg> -->
+        <div class=" d-flex align-items-center gap-4 me-auto d-none d-lg-flex">
+             <a href="all-products.html" class="text-decoration-none text-dark">
+                <span class="nav-icon-hover">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person  " viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                    </svg>
+                </span>
+            
+            </a>
+            <span class="nav-icon-hover">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+            </svg>
+            </span>
+
+            <a href="shopping-cart.html" class="text-decoration-none text-dark">
+            <span class="nav-icon-hover">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag " viewBox="0 0 16 16">
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+            </svg>
+            </span>
+             </a>
+        </div>
+        
   </div>
+
 </nav>
+
+
     <div class="StyleSphere-Homepage" id="stylesphere-Homepage">
         <div class="Homepage-text-container ms-4 ps-md-5">
             <div class="homepage-textblock-1 ">
@@ -60,53 +105,59 @@
             <h1 class="home-heading">Discover Your Unique Style</h1>
             <p class="home-description ">Explore our curated collection of premium fashion pieces designed for the modern lifestyle.</p>
             <div>
-                <button class="homepage-button">Shop Now <span><i class="fa-solid fa-arrow-right fa-sm"></i></span></button>
-                <button class="homepage-button2">New Arrivals</button>
+                <a class="homepage-button" href="All-products.html">Shop Now <span><i class="fa-solid fa-arrow-right fa-sm ps-2"></i></span></a>
+                <a class="homepage-button2" href="new-arrivals.html">New Arrivals</a>
 
             </div>
         </div>
     </div>
 
     
-    <div class="ShopByCategory-page pt-5 pb-5" id="ShopByCategory-page">
+    <div class="ShopByCategory-page mt-5 pt-5 pb-5" id="ShopByCategory-page">
        <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="shopbycategory-bg-container pb-5">
                         <h1 class="shopbycategory-heading">Shop by Category</h1>
                         <p class="shopbycategory-description">Explore our diverse range of products tailored to match your lifestyle.</p>
-                        <div class="shopbycategory-cards-container">  
+                        <div class="shopbycategory-cards-container mt-4">  
                             <div class="shopbycategory-card-container d-flex flex-column justify-content-end">
-                                <!-- <img src="https://i.pinimg.com/originals/c2/26/b0/c226b01faa5498bdc07da508602df015.jpg"/> -->
+                                <a href="men.html" class="text-decoration-none text-dark">
+                                
                                 <div class="ms-3">
                                     <h1 class="shopbycategory-card-heading">Men</h1>
                                     <p class="shopbycategory-card-description">Shop Now<span><i class="fa-solid fa-arrow-right fa-sm ms-1"></i></span></p>
                                     
                                 </div>
+                            </a>
                             </div>
                             <div class="shopbycategory-card-container-2 d-flex flex-column justify-content-end">
-                                
+                                <a href="women.html" class="text-decoration-none text-dark">
                                 <div class="ms-3">
                                     <h1 class="shopbycategory-card-heading">Women</h1>
                                     <p class="shopbycategory-card-description">Shop Now<span><i class="fa-solid fa-arrow-right fa-sm ms-1"></i></span></p>
                                     
                                 </div>
                             </div>
+                            </a>
                             <div class="shopbycategory-card-container-3 d-flex flex-column justify-content-end">
-                                
+                                <a href="accessories.html" class="text-decoration-none text-dark">
                                 <div class="ms-3">
                                     <h1 class="shopbycategory-card-heading">Accessories</h1>
                                     <p class="shopbycategory-card-description">Shop Now<span><i class="fa-solid fa-arrow-right fa-sm ms-1"></i></span></p>
                                     
                                 </div>
+                                </a>
                             </div>
                             <div class="shopbycategory-card-container-4 d-flex flex-column justify-content-end">
                                 
+                                <a href="shoes.html" class="text-decoration-none text-dark">
                                 <div class="ms-3">
                                     <h1 class="shopbycategory-card-heading">Shoes</h1>
                                     <p class="shopbycategory-card-description">Shop Now<span><i class="fa-solid fa-arrow-right fa-sm ms-1"></i></span></p>
                                     
                                 </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -121,63 +172,150 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="ms-5">
+                    <div class="ms-4">
                         <h1 class="featureproduct-heading">Featured Products</h1>
                         <p class="featureproduct-description">Discover our handpicked selection of must-have items for the season.</p>
 
                     </div>
                     <div class="featureproduct-cards-container d-flex flex-wrap justify-content-center justify-content-around">
+                       
                         <div class="featureproduct-card-container shadow-sm d-flex flex-column mb-3">
-                            <div>
-                                <img src="data:image/jpeg;base64,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" class="featureproduct-card-image"/>
+                        <a href="nike-sneaker1-detials.html" class="text-decoration-none text-dark">
+                            
+                            <!--  before hover
+                                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800" class="featureproduct-card-image w-100"/>
 
-                            </div>
+                            </div> -->
+                                        <div class="product-image-container position-relative">
+
+                                            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800"
+                                                class="featureproduct-card-image w-100"/>
+                                                <span class="card-product-discount-tag">-40%</span>
+                                            
+                                            <div class="wishlist-icon">
+                                                <i class="bi bi-heart"></i>
+                                            </div>
+
+                                            
+                                            <div class="add-to-cart-overlay">
+                                                <button class="btn btn-primary w-75">
+                                                    <i class="bi bi-bag me-2"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+
+                                        </div>
                             <div class="featureproduct-card-text-container ms-2">
-                                <p class="featureproduct-card-title">Nike</p>
+                                <p class="featureproduct-card-title">NIKE</p>
                                 <h3 class="featureproduct-card-heading">Nike Sneakers</h3>
                                 <p class="featureproduct-card-description">Premium Quality</p>      
-                                <p>$99 <span class="nike-sneaker-span">$159</span></p>
+                                <p class="fw-bold">$99 <span class="nike-sneaker-span">$159</span></p>
                             </div>
-                        </div>                
+                        </a>
+                        </div>  
+                        
+                        
                         <div class="featureproduct-card-container shadow-sm d-flex flex-column mb-3">
-                            <div>
-                                <img src="data:image/jpeg;base64,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" class="featureproduct-card-image"/>
+                            <a href="levi's-jeans1-details.html" class="text-decoration-none text-dark">
+                            <!-- <div>
+                                <img src="https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=800" class="featureproduct-card-image w-100"/>
+
+                            </div> -->
+                            <div class="product-image-container position-relative">
+
+                                <img src="https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=800"
+                                class="featureproduct-card-image w-100"/>
+                                <span class="card-product-new-tag">New</span>
+                                            
+                                            <div class="wishlist-icon">
+                                                <i class="bi bi-heart"></i>
+                                            </div>
+
+                                            
+                                            <div class="add-to-cart-overlay">
+                                                <button class="btn btn-primary w-75">
+                                                    <i class="bi bi-bag me-2"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
 
                             </div>
                             <div class="featureproduct-card-text-container ms-2">
-                                <p class="featureproduct-card-title">Levi's</p>
-                                <h3 class="featureproduct-card-heading">Denim Jacket</h3>
+                                <p class="featureproduct-card-title">LEVI'S</p>
+                                <h3 class="featureproduct-card-heading">Denim Jeans</h3>
                                 <p class="featureproduct-card-description">Classic Denim Jacket with a modern fit</p>      
-                                <p>$75 </p>
+                                <p class="fw-bold">$69.99 </p>
                             </div>
+                            </a>
                         </div>                
                         <div class="featureproduct-card-container shadow-sm   d-flex flex-column mb-3">
-                            <div>
-                                <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/3591a27de6c34250bce92c9e5eaba3aa_9366/Own_The_Run_Allover_Print_Tee_Blue_JZ5477_41_detail.jpg" class="featureproduct-card-image w-100"/>
+                            <a href="adidas-tshirt1-details.html" class="text-decoration-none text-dark">
+                            <!-- <div>
+                                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=600&fit=crop" class="featureproduct-card-image w-100"/>
+
+                            </div> -->
+                            <div class="product-image-container position-relative">
+
+                                            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=600&fit=crop"
+                                                class="featureproduct-card-image w-100"/>
+
+                                            
+                                            <div class="wishlist-icon">
+                                                <i class="bi bi-heart"></i>
+                                            </div>
+
+                                            
+                                            <div class="add-to-cart-overlay">
+                                                <button class="btn btn-primary w-75">
+                                                    <i class="bi bi-bag me-2"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
 
                             </div>
                             <div class="featureproduct-card-text-container ms-2">
-                                <p class="featureproduct-card-title">Adidas</p>
+                                <p class="featureproduct-card-title">ADIDAS</p>
                                 <h3 class="featureproduct-card-heading">Running Performance Tee</h3>
-                                <p class="featureproduct-card-description">Lightweight,breathable performance t-shirt</p>      
-                                <p>$69 </p>
+                                <p class="featureproduct-card-description">Lightweight,breathable performance t-shirt.</p>      
+                                <p class="fw-bold">$45.99 </p>
                             </div>
+                            </a>
                         </div>                
                         <div class="featureproduct-card-container shadow-sm mb-3">
-                            <div>
-                                <img src="data:image/jpeg;base64,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" class="featureproduct-card-image w-100"/>
+                            <a href="gucci-crossbody-bag-details.html" class="text-decoration-none text-dark">
+                            
+                            <div class="product-image-container position-relative">
+
+                                            <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800"
+                                                class="featureproduct-card-image w-100"/>
+
+                                            
+                                            <div class="wishlist-icon">
+                                                <i class="bi bi-heart"></i>
+                                            </div>
+
+                                            
+                                            <div class="add-to-cart-overlay">
+                                                <button class="btn btn-primary w-75">
+                                                    <i class="bi bi-bag me-2"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+
                             </div>
+                            
                             <div class="featureproduct-card-text-container ms-2">
-                                <p class="featureproduct-card-title">Gucci</p>
+                                <p class="featureproduct-card-title">GUCCI</p>
                                 <h3 class="featureproduct-card-heading">Leather cross-body bag</h3>
-                                <p class="featureproduct-card-description">Elegant leather crossbody with adjustable strap</p>      
-                                <p>$499</p>
+                                <p class="featureproduct-card-description">Elegant leather crossbody bag...</p>      
+                                <p class="fw-bold">$299.99</p>
                             </div>
+                            </a>
                         </div>                
                     </div>    
                     <div class="d-flex justify-content-center mt-4">
 
-                        <button class="feature-page-button">View All Products <i class="fa-solid fa-arrow-right ms-2"></i></button>        
+                        <a href="all-products.html" class="feature-page-button text-decoration-none ">View All Products <i class="fa-solid fa-arrow-right ms-2"></i></a>        
                     </div>    
                 </div>                
             </div>                
@@ -188,15 +326,15 @@
     <div class="limited-time-offer-section pt-5 pb-5 bg-white">
         <div class="container ">
             <div class="row">
-                <div class="col-12 d-flex flex-column align-items-center  pt-5 pb-5  ">
+                <div class="col-12 d-flex flex-column  align-items-center  pt-5 pb-5  ">
                     <div class="limited-time-offer-card-container ps-5 d-flex flex-column justify-content-center   p-4">
-                        <div class="promo-text-container">
+                        <div class="promo-text-container ">
                             <p class="promo-text">Limited Time Offer</p>
 
                         </div>
-                        <h1 class="promo-heading">Up to 50% Off</h1>
-                        <p class="promo-description">Don't miss out on our biggest sale of the season. Shop now and save on your favorite styles.</p>
-                        <button class="promo-button">Shop Sale <i class="fa-solid fa-arrow-right fa-sm"></i></button>
+                            <h1 class="promo-heading">Up to 50% Off</h1>
+                            <p class="promo-description">Don't miss out on our biggest sale of the season. Shop now and save on your favorite styles.</p>
+                            <a href="sale.html" class="promo-button text-decoration-none ">Shop Sale <i class="fa-solid fa-arrow-right fa-sm ps-2"></i></a>
                     </div>
                     <hr class="hr-line">
                 </div>
@@ -252,7 +390,7 @@
     <div class="footer-section pt-5 pb-5 text-white">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 ">
+                <div class="col-12 d-md-none ">
                     <h2 class="footer-heading">
                     <span class="footer-logo-icon">
                      <svg width="30" height="27" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
@@ -278,15 +416,15 @@
                         </div>
                     </div>  
                 </div>
-                <div class="col-12 mt-5 d-flex flex-row ">
+                <div class="col-12 d-md-none mt-5 d-flex flex-row ">
                     <div class="footer-items-section">
                     <h3 class="footer-heading-2">Shop</h3>
-                    <p class="footer-description-2">Men</p>
-                    <p class="footer-description-2">Women</p>
-                    <p class="footer-description-2">Accessories</p>
-                    <p class="footer-description-2">Shoes</p>
-                    <p class="footer-description-2">New Arrivals</p>
-                    <p class="footer-description-2">Sale</p>
+                    <a href="men.html" class="text-decoration-none "><p class="footer-description-2">Men</p></a>
+                        <a href="women.html" class="text-decoration-none "><p class="footer-description-2">Women</p></a>
+                        <a href="accessories.html" class="text-decoration-none "><p class="footer-description-2">Accessories</p></a>
+                        <a href="shoes.html" class="text-decoration-none "><p class="footer-description-2">Shoes</p></a>
+                        <a href="new-arrivals.html" class="text-decoration-none "><p class="footer-description-2">New Arrivals</p></a>
+                        <a href="sale.html" class="text-decoration-none "><p class="footer-description-2">Sale</p></a>
                     </div>
 
                     <div class="footer-items-section">
@@ -297,7 +435,7 @@
                     <p class="footer-description-2">Blog</p>
                     </div>
                 </div>
-                <div class="col-12 mt-5 d-flex flex-row ">
+                <div class="col-12 d-md-none mt-5 d-flex flex-row ">
                     <div class="footer-items-section">
                         <h3 class="footer-heading-2">Support</h3>
                         <p class="footer-description-2">Contact Us</p>
@@ -321,16 +459,99 @@
                         <button class="footer-subscribe-button">Subscribe</button>
                     </div>
                 </div>
+                            <!-- Below code for device whose size>= medium  -->
+                <div class="col-12 mt-5 d-flex flex-row flex-wrap d-none d-md-flex ">
+                    <div>
+                        <h2 class="footer-heading">
+                            <span class="footer-logo-icon">
+                                <svg width="30" height="27" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+                                    <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path>
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <path d="M16 10a4 4 0 01-8 0"></path>
+                                </svg>
+                            </span>
+                            StyleSphere</h2>
+                            <p class="footer-description w-75">Discover the latest trends in fashion. Quality meets style at StyleSphere.</p>
+                    
+                        <div class="d-flex flex-row ">                   
+                            <div class="footer-social-icon">
+                            <i class="fa-brands fa-facebook-f "></i>
+                            </div>
+                            <div class="footer-social-icon">
+                            <i class="fa-brands fa-x-twitter"></i>
+                            </div>
+                            <div class="footer-social-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="footer-social-icon">
+                            <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>  
+                    </div>
+                    
+                    <div>
+                        <div class="footer-items-section">
+                        <h3 class="footer-heading-2">Shop</h3>
+                        <a href="men.html" class="text-decoration-none "><p class="footer-description-2">Men</p></a>
+                        <a href="women.html" class="text-decoration-none "><p class="footer-description-2">Women</p></a>
+                        <a href="accessories.html" class="text-decoration-none "><p class="footer-description-2">Accessories</p></a>
+                        <a href="shoes.html" class="text-decoration-none "><p class="footer-description-2">Shoes</p></a>
+                        <a href="new-arrivals.html" class="text-decoration-none "><p class="footer-description-2">New Arrivals</p></a>
+                        <a href="sale.html" class="text-decoration-none "><p class="footer-description-2">Sale</p></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="footer-items-section">
+                        <h3 class="footer-heading-2">Company</h3>
+                        <p class="footer-description-2">About Us</p>
+                        <p class="footer-description-2">Careers</p>
+                        <p class="footer-description-2">Press</p>
+                        <p class="footer-description-2">Blog</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="footer-items-section">
+                            <h3 class="footer-heading-2">Support</h3>
+                            <p class="footer-description-2">Contact Us</p>
+                            <p class="footer-description-2">FAQs</p>
+                            <p class="footer-description-2">Shipping Info</p>
+                            <p class="footer-description-2">Returns</p>
+                            <p class="footer-description-2">Size Guide</p>
+                        
+                        </div>
+                    </div>
+                    <div>                  
+                        <div class="footer-items-section">
+                            <h3 class="footer-heading-2 w-50">NewsLetter</h3>
+                            <p class="footer-description-2 ">Subscribe to get special offers and updates</p>
+                            
+                            <form>
+
+                            <input type="email" class="form-control border border-secondary rounded" placeholder="Enter your email">
+                            
+                            </form>
+
+                            <button class="footer-subscribe-button">Subscribe</button>
+                        </div>
+                    </div>
+                
+
+
+                </div>
+                
                 <div class="col-12">
                     <hr class="footer-hr-line">
-                    <div class="text-center">
-                    <p class="footer-description">© 2024 StyleSphere7321. All rights reserved.</p>
-                    <div class="d-flex flex-row justify-content-center ">
-                        <p class="footer-description me-4">Privacy Policy </p>
-                        <p class="footer-description">Terms of Service </p>
-
-                    </div>
-                    </div> 
+                   
+                        <div class="d-flex flex-row justify-content-between align-items-center">
+                            <p class="footer-description ">© 2024 StyleSphere7321. All rights reserved.</p>
+                            <div class="d-flex flex-row">
+                                <p class="footer-description me-2">Privacy Policy </p>
+                                <p class="footer-description">Terms of Service </p>
+                                
+                            </div>
+                        </div>
+                    
                 </div>
 
                 

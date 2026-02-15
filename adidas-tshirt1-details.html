@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/7a8350a45d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>StyleSphereClone</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"> -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <div class="container">
+    <span class="nav-icon-container-1">
+    <svg width="29" height="27" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24" class="nav-logo-icon">
+        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <path d="M16 10a4 4 0 01-8 0"></path>
+    </svg>
+    <a class="navbar-brand " href="main.html">StyleSphere</a>
+    </span>
+    <div class=" d-flex align-items-center gap-2 ms-auto  d-lg-none">
+            <a href="all-products.html" class="text-decoration-none text-dark">
+            <span class="nav-icon-hover">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person " viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                    </svg>
+                </span>
+            </a>
+            <span class="nav-icon-hover">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+            </svg>
+            </span>
+            <a href="shopping-cart.html" class="text-decoration-none text-dark">
+            <span class="nav-icon-hover">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag " viewBox="0 0 16 16">
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+            </svg>
+            </span>
+             </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav  mb-2 mb-lg-0">
+        <li class="nav-item ms-4">
+          <a class="nav-link" href="all-products.html">Shop</a>
+        </li>
+        
+        <li class="nav-item ms-4">
+          <a class="nav-link" href="new-arrivals.html">New Arrivals</a>
+        </li>
+        
+        <li class="nav-item ms-4">
+          <a class="nav-link" href="sale.html">Sale</a>
+        </li>
+        
+    
+      <form class="d-flex  ms-4 ms-lg-5 ps-lg-5" role="Search">
+        <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="search"/>
+        <button class="btn btn-outline-dark" type="submit">Search</button>
+      </form>
+    </div>
+        <div class=" d-flex align-items-center gap-4 me-auto d-none d-lg-flex">
+             <a href="all-products.html" class="text-decoration-none text-dark">
+                <span class="nav-icon-hover">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person  " viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                    </svg>
+                </span>
+            
+            </a>
+            <span class="nav-icon-hover">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+            </svg>
+            </span>
+
+            <a href="shopping-cart.html" class="text-decoration-none text-dark">
+            <span class="nav-icon-hover">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag " viewBox="0 0 16 16">
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+            </svg>
+            </span>
+             </a>
+        </div>
+        
+  </div>
+
+</nav>
+
+
+        <div class="container mt-5 pt-3">
+
+    <!-- breadcrumb -->
+    <!-- <p class="text-muted small mb-3">
+        Home > Shop > Running Performance Tee
+    </p> -->
+    <nav class="mb-4 mt-3">
+
+  <ol class="breadcrumb align-items-center">
+
+    <li class="breadcrumb-item">
+      <a href="main.html" class="text-decoration-none text-muted">
+        Home
+      </a>
+    </li>
+
+    <li class="mx-2 text-muted">
+      <i class="bi bi-chevron-right"></i>
+    </li>
+
+    <li class="breadcrumb-item">
+      <a href="all-products.html" class="text-decoration-none text-muted">
+        Shop
+      </a>
+    </li>
+
+    <li class="mx-2 text-muted">
+      <i class="bi bi-chevron-right"></i>
+    </li>
+
+    <li class="breadcrumb-item active fw-semibold text-dark">
+      Running Performance Tee
+    </li>
+
+  </ol>
+
+</nav>
+
+
+
+
+    <div class="row">
+
+        
+        <div class="col-12 col-lg-6 mb-4">
+
+            <img
+                src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600"
+                class="w-100 rounded-3 mb-3">
+
+            <img
+                src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600"
+                class="adidas-tshirt1-detials-sub-image">
+
+        </div>
+
+
+
+       
+        <div class="col-12 col-lg-6">
+
+
+           
+            <p class="text-muted small mb-1">
+                ADIDAS
+            </p>
+
+
+            
+            <h2 class="fw-bold mb-2">
+                Running Performance Tee
+            </h2>
+
+
+            
+            <div class="mb-2">
+
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star-half-stroke text-warning"></i>
+
+                <span class="text-muted small ms-2">
+                    4.6 (89 reviews)
+                </span>
+
+            </div>
+
+
+    
+            <h4 class="fw-bold mb-3">
+                $45.99
+            </h4>
+
+
+           
+            <p class="text-muted mb-3">
+                Lightweight, breathable performance t-shirt
+            </p>
+
+
+
+           
+            <p class="fw-semibold mb-2">
+                Color: White
+            </p>
+
+            <div class="d-flex gap-2 mb-3">
+
+                <div class="adidas-tshirt1-detials-color1"></div>
+
+                <div class="adidas-tshirt1-detials-color2"></div>
+
+                <div class="adidas-tshirt1-detials-color3"></div>
+
+            </div>
+
+
+
+            
+            <p class="fw-semibold mb-2">
+                Size
+            </p>
+
+            <select class="form-select mb-3">
+
+                <option>Select size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+
+            </select>
+
+
+
+            
+            <p class="fw-semibold mb-2">
+                Quantity
+            </p>
+
+            <div class="d-flex align-items-center gap-3 mb-4">
+
+                <button class="btn btn-outline-secondary">-</button>
+
+                <span>1</span>
+
+                <button class="btn btn-outline-secondary">+</button>
+
+            </div>
+
+
+
+            
+            <button class="btn btn-primary w-100 mb-4">
+                Add to Cart
+            </button>
+
+
+
+            
+            <div class="row text-center text-muted small">
+
+                <div class="col">
+                    <i class="fa-solid fa-truck mb-1"></i>
+                    <p>Free Shipping</p>
+                </div>
+
+                <div class="col">
+                    <i class="fa-solid fa-arrow-rotate-left mb-1"></i>
+                    <p>Easy Returns</p>
+                </div>
+
+                <div class="col">
+                    <i class="fa-solid fa-shield mb-1"></i>
+                    <p>Secure Payment</p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    
+    <ul class="nav nav-tabs mt-5">
+
+        <li class="nav-item">
+            <button class="nav-link active"
+                data-bs-toggle="tab"
+                data-bs-target="#description">
+                Description
+            </button>
+        </li>
+
+        <li class="nav-item">
+            <button class="nav-link"
+                data-bs-toggle="tab"
+                data-bs-target="#specifications">
+                Specifications
+            </button>
+        </li>
+
+        <li class="nav-item">
+            <button class="nav-link"
+                data-bs-toggle="tab"
+                data-bs-target="#reviews">
+                Reviews
+            </button>
+        </li>
+
+    </ul>
+
+
+
+    <div class="tab-content mt-3">
+
+       
+        <div class="tab-pane fade show active" id="description">
+
+            <p class="text-muted">
+                Lightweight, breathable performance t-shirt. Our products are crafted with attention to detail and quality materials.
+            </p>
+
+        </div>
+
+
+       
+        <div class="tab-pane fade" id="specifications">
+
+            <div class="row border-bottom py-2">
+                <div class="col-6 text-muted">Brand</div>
+                <div class="col-6">Adidas</div>
+            </div>
+
+            <div class="row border-bottom py-2">
+                <div class="col-6 text-muted">Available Sizes</div>
+                <div class="col-6">S, M, L, XL</div>
+            </div>
+
+            <div class="row border-bottom py-2">
+                <div class="col-6 text-muted">Colors</div>
+                <div class="col-6">White, Black, Navy</div>
+            </div>
+
+            <div class="row py-2">
+                <div class="col-6 text-muted">Category</div>
+                <div class="col-6">Men</div>
+            </div>
+
+        </div>
+
+
+       
+        <div class="tab-pane fade text-center py-5" id="reviews">
+
+            <i class="fa-regular fa-star fs-1 text-muted mb-3"></i>
+
+            <p class="fw-semibold">
+                Customer Reviews Coming Soon
+            </p>
+
+            <p class="text-muted small">
+                Be the first to leave a review for this product.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    
+    <h3 class="fw-bold mt-5 mb-4">
+        You May Also Like
+    </h3>
+
+
+    <div class="row">
+
+        </div> 
+            <div class="col-6 col-md-4 col-lg-3" >
+                <a href="levi's-jeans1-details.html" class="text-decoration-none text-dark">
+                        <div class="product-card-container shadow-sm mb-4">
+                            <img src="https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=500&h=600&fit=crop" class="all-products-image-01"/>
+                            <div class="product-card-container-text-container p-2">
+                                <p class="product-card-container-brand">LEVI's</p>
+                                <h3 class="product-card-container-heading">DENIM JEANS</h3>
+                                <p class="product-card-container-description">Classic Denim Jeans</p>
+                                <p class="product-card-container-price">$69.99</p>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+
+    </div>
+
+
+</div>
+    
+
+    <div class="footer-section mt-5 pt-5 pb-5 ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 d-md-none ">
+                    <h2 class="footer-heading">
+                    <span class="footer-logo-icon">
+                     <svg width="30" height="27" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 01-8 0"></path>
+                    </svg>
+                    </span>
+                        StyleSphere</h2>
+                        <p class="footer-description">Discover the latest trends in fashion. Quality meets style at StyleSphere.</p>
+                    <div class="d-flex flex-row ">                   
+                        <div class="footer-social-icon">
+                        <i class="fa-brands fa-facebook-f "></i>
+                        </div>
+                        <div class="footer-social-icon">
+                        <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                        <div class="footer-social-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="footer-social-icon">
+                        <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-12 d-md-none mt-5 d-flex flex-row ">
+                    <div class="footer-items-section">
+                    <h3 class="footer-heading-2">Shop</h3>
+                    <p class="footer-description-2">Men</p>
+                    <p class="footer-description-2">Women</p>
+                    <p class="footer-description-2">Accessories</p>
+                    <p class="footer-description-2">Shoes</p>
+                    <p class="footer-description-2">New Arrivals</p>
+                    <p class="footer-description-2">Sale</p>
+                    </div>
+
+                    <div class="footer-items-section">
+                    <h3 class="footer-heading-2">Company</h3>
+                    <p class="footer-description-2">About Us</p>
+                    <p class="footer-description-2">Careers</p>
+                    <p class="footer-description-2">Press</p>
+                    <p class="footer-description-2">Blog</p>
+                    </div>
+                </div>
+                <div class="col-12 d-md-none mt-5 d-flex flex-row ">
+                    <div class="footer-items-section">
+                        <h3 class="footer-heading-2">Support</h3>
+                        <p class="footer-description-2">Contact Us</p>
+                        <p class="footer-description-2">FAQs</p>
+                        <p class="footer-description-2">Shipping Info</p>
+                        <p class="footer-description-2">Returns</p>
+                        <p class="footer-description-2">Size Guide</p>
+                    
+                    </div>
+
+                    <div class="footer-items-section">
+                        <h3 class="footer-heading-2">NewsLetter</h3>
+                        <p class="footer-description-2">Subscribe to get special offers and updates</p>
+                        
+                        <form>
+
+                        <input type="email" class="form-control border border-secondary rounded" placeholder="Enter your email">
+                        
+                        </form>
+
+                        <button class="footer-subscribe-button">Subscribe</button>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!-- Below code for device whose size>= medium  -->
+
+                <div class="col-12 mt-5 d-flex flex-row flex-wrap d-none d-md-flex ">
+                    <div>
+                        <h2 class="footer-heading">
+                            <span class="footer-logo-icon">
+                                <svg width="30" height="27" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+                                    <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path>
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <path d="M16 10a4 4 0 01-8 0"></path>
+                                </svg>
+                            </span>
+                            StyleSphere</h2>
+                            <p class="footer-description w-75">Discover the latest trends in fashion. Quality meets style at StyleSphere.</p>
+                    
+                        <div class="d-flex flex-row ">                   
+                            <div class="footer-social-icon">
+                            <i class="fa-brands fa-facebook-f "></i>
+                            </div>
+                            <div class="footer-social-icon">
+                            <i class="fa-brands fa-x-twitter"></i>
+                            </div>
+                            <div class="footer-social-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="footer-social-icon">
+                            <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>  
+                    </div>
+                    
+                    <div>
+                        <div class="footer-items-section">
+                        <h3 class="footer-heading-2">Shop</h3>
+                        <p class="footer-description-2">Men</p>
+                        <p class="footer-description-2">Women</p>
+                        <p class="footer-description-2">Accessories</p>
+                        <p class="footer-description-2">Shoes</p>
+                        <p class="footer-description-2">New Arrivals</p>
+                        <p class="footer-description-2">Sale</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="footer-items-section">
+                        <h3 class="footer-heading-2">Company</h3>
+                        <p class="footer-description-2">About Us</p>
+                        <p class="footer-description-2">Careers</p>
+                        <p class="footer-description-2">Press</p>
+                        <p class="footer-description-2">Blog</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="footer-items-section">
+                            <h3 class="footer-heading-2">Support</h3>
+                            <p class="footer-description-2">Contact Us</p>
+                            <p class="footer-description-2">FAQs</p>
+                            <p class="footer-description-2">Shipping Info</p>
+                            <p class="footer-description-2">Returns</p>
+                            <p class="footer-description-2">Size Guide</p>
+                        
+                        </div>
+                    </div>
+                    <div>                  
+                        <div class="footer-items-section">
+                            <h3 class="footer-heading-2 w-50">NewsLetter</h3>
+                            <p class="footer-description-2 ">Subscribe to get special offers and updates</p>
+                            
+                            <form>
+
+                            <input type="email" class="form-control border border-secondary rounded" placeholder="Enter your email">
+                            
+                            </form>
+
+                            <button class="footer-subscribe-button">Subscribe</button>
+                        </div>
+                    </div>
+                
+
+
+                </div>
+
+                <div class="col-12">
+                    <hr class="footer-hr-line">
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                            <p class="footer-description ">© 2024 StyleSphere7321. All rights reserved.</p>
+                            <div class="d-flex flex-row">
+                                <p class="footer-description me-2">Privacy Policy </p>
+                                <p class="footer-description">Terms of Service </p>
+                                
+                            </div>
+                        </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

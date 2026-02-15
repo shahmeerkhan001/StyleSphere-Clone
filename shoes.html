@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/7a8350a45d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>StyleSphereClone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <div class="container">
+    <span class="nav-icon-container-1">
+    <svg width="29" height="27" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24" class="nav-logo-icon">
+        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <path d="M16 10a4 4 0 01-8 0"></path>
+    </svg>
+    <a class="navbar-brand " href="main.html">StyleSphere</a>
+    </span>
+    <div class=" d-flex align-items-center gap-2 ms-auto  d-lg-none">
+            <a href="all-products.html" class="text-decoration-none text-dark">
+            <span class="nav-icon-hover">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person " viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                    </svg>
+                </span>
+            </a>
+            <span class="nav-icon-hover">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+            </svg>
+            </span>
+            <a href="shopping-cart.html" class="text-decoration-none text-dark">
+            <span class="nav-icon-hover">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag " viewBox="0 0 16 16">
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+            </svg>
+            </span>
+             </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav  mb-2 mb-lg-0">
+        <li class="nav-item ms-4">
+          <a class="nav-link" href="all-products.html">Shop</a>
+        </li>
+        
+        <li class="nav-item ms-4">
+          <a class="nav-link" href="new-arrivals.html">New Arrivals</a>
+        </li>
+        
+        <li class="nav-item ms-4">
+          <a class="nav-link" href="sale.html">Sale</a>
+        </li>
+        
+    
+      <form class="d-flex  ms-4 ms-lg-5 ps-lg-5" role="Search">
+        <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="search"/>
+        <button class="btn btn-outline-dark" type="submit">Search</button>
+      </form>
+    </div>
+        <div class=" d-flex align-items-center gap-4 me-auto d-none d-lg-flex">
+             <a href="all-products.html" class="text-decoration-none text-dark">
+                <span class="nav-icon-hover">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person  " viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                    </svg>
+                </span>
+            
+            </a>
+            <span class="nav-icon-hover">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+            </svg>
+            </span>
+
+            <a href="shopping-cart.html" class="text-decoration-none text-dark">
+            <span class="nav-icon-hover">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag " viewBox="0 0 16 16">
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+            </svg>
+            </span>
+             </a>
+        </div>
+        
+  </div>
+
+</nav>
+
+<div class="shoes-page mt-5 pt-5 pb-5" id="shoes-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 ">
+                <h1 class="all-products-heading">Shoes</h1>
+                <p class="all-products-description">2 products found</p>
+                <div class="d-flex flex-row justify-content-between align-items-center mb-4">
+                    <div>
+                        <button class="btn btn-outline-secondary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Filter</button>
+                        
+                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Filter</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                        <div class="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sort by
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Featured</a></li>
+                                <li><a class="dropdown-item" href="#">Newest</a></li>
+                                <li><a class="dropdown-item" href="#">Price: Low to High</a></li>
+                                <li><a class="dropdown-item" href="#">Price: High to Low</a></li>
+                                <li><a class="dropdown-item" href="#">Top Rated</a></li>
+                            </ul>
+                        </div>
+                    
+                </div>
+
+            </div>
+            <hr class="all-products-hr-line mb-3">
+            <div class="col-lg-3 d-none d-lg-block">
+
+            <!-- Header -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="mb-0">Filters</h5>
+                <a href="#" class="text-decoration-none text-muted small">Clear</a>
+            </div>
+
+            <div class="accordion accordion-flush" id="accordion">
+
+                <!-- Brand -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-0"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#brandFilter">
+                            Brand
+                        </button>
+                    </h2>
+
+                    <div id="brandFilter"
+                        class="accordion-collapse collapse show"
+                        >
+
+                        <div class="accordion-body px-0">
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Nike</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Adidas</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Levi's</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Zara</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Coach</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Max Mara</label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Price -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-0"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#priceFilter">
+                            Price
+                        </button>
+                    </h2>
+
+                    <div id="priceFilter"
+                        class="accordion-collapse collapse "
+                        >
+
+                        <div class="accordion-body px-0">
+
+                            <input type="range" class="form-range">
+
+                            <div class="d-flex justify-content-between small text-muted">
+                                <span>$0</span>
+                                <span>$500</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Clothing Size -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-0"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#clothingSize">
+                            Clothing Size
+                        </button>
+                    </h2>
+
+                    <div id="clothingSize"
+                        class="accordion-collapse collapse "
+                        data-bs-parent="#filterAccordion">
+
+                        <div class="accordion-body px-0">
+
+                            <div class="d-flex flex-wrap gap-2">
+
+                                <button class="btn btn-outline-secondary btn-sm">XS</button>
+                                <button class="btn btn-outline-secondary btn-sm">S</button>
+                                <button class="btn btn-outline-secondary btn-sm">M</button>
+                                <button class="btn btn-outline-secondary btn-sm">L</button>
+                                <button class="btn btn-outline-secondary btn-sm">XL</button>
+                                <button class="btn btn-outline-secondary btn-sm">XXL</button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-0"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#shoeSize">
+                            Shoe Size
+                        </button>
+                    </h2>
+
+                    <div id="shoeSize"
+                        class="accordion-collapse collapse "
+                        data-bs-parent="#filterAccordion">
+
+                        <div class="accordion-body px-0">
+
+                            <div class="d-flex flex-wrap gap-2">
+
+                                <button class="btn btn-outline-secondary btn-sm">38</button>
+                                <button class="btn btn-outline-secondary btn-sm">39</button>
+                                <button class="btn btn-outline-secondary btn-sm">40</button>
+                                <button class="btn btn-outline-secondary btn-sm">41</button>
+                                <button class="btn btn-outline-secondary btn-sm">42</button>
+                                <button class="btn btn-outline-secondary btn-sm">43</button>
+                                <button class="btn btn-outline-secondary btn-sm">44</button>
+                                <button class="btn btn-outline-secondary btn-sm">45</button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+
+
+
+
+            <div class="col-12 col-lg-9">
+                <div class="row">
+                    
+                    <div class="col-6 col-md-4 col-lg-3" >
+                        <a href="nike-sneaker1-detials.html" class="text-decoration-none text-dark">
+                        <div class="product-card-container shadow-sm mb-4">
+                            <!-- <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500&h=600&fit=crop" class="all-products-image-01"/> -->
+                              <div class="product-image-container position-relative">
+                                            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500&h=600&fit=crop"
+                                                class="all-products-image-01"/>
+                                            <span class="card-product-discount-tag">-40%</span>
+                                            
+                                            <div class="wishlist-icon">
+                                                <i class="bi bi-heart"></i>
+                                            </div>
+                                            <div class="add-to-cart-overlay">
+                                                <button class="btn btn-primary w-75">
+                                                    <i class="bi bi-bag me-2"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                    </div>
+                            <div class="product-card-container-text-container p-2">
+                                <p class="product-card-container-brand">NIKE</p>
+                                <h3 class="product-card-container-heading">Classic White Sneakers </h3>
+                                <p class="product-card-container-description">Premium leather sneakers</p>
+                                <p class="product-card-container-price">$99 <span class="nike-sneaker-span">$159</span></p>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+        
+
+                    <div class="col-6 col-md-4 col-lg-3" >
+                        <a href="nike-athletic-shoes1-details.html" class="text-decoration-none text-dark">
+                        <div class="product-card-container shadow-sm mb-4">
+                            <!-- <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=600&fit=crop" class="all-products-image-01"/> -->
+                              <div class="product-image-container position-relative">
+                                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=600&fit=crop"
+                                                class="all-products-image-01"/>
+
+                                            
+                                            <div class="wishlist-icon">
+                                                <i class="bi bi-heart"></i>
+                                            </div>
+                                            <div class="add-to-cart-overlay">
+                                                <button class="btn btn-primary w-75">
+                                                    <i class="bi bi-bag me-2"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                    </div>
+                            <div class="product-card-container-text-container p-2">
+                                <p class="product-card-container-brand">NIKE</p>
+                                <h3 class="product-card-container-heading">Athletic Running Shoes</h3>
+                                <p class="product-card-container-description ">High-performance athletic shoes</p>
+                                <p class="product-card-container-price">$119.99</p>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+                
+                </div>
+            </div>    
+        </div>
+
+    </div>
+</div>
+
+
+    <div class="footer-section mt-5 pt-5 pb-5 ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 d-md-none ">
+                    <h2 class="footer-heading">
+                    <span class="footer-logo-icon">
+                     <svg width="30" height="27" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 01-8 0"></path>
+                    </svg>
+                    </span>
+                        StyleSphere</h2>
+                        <p class="footer-description">Discover the latest trends in fashion. Quality meets style at StyleSphere.</p>
+                    <div class="d-flex flex-row ">                   
+                        <div class="footer-social-icon">
+                        <i class="fa-brands fa-facebook-f "></i>
+                        </div>
+                        <div class="footer-social-icon">
+                        <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                        <div class="footer-social-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="footer-social-icon">
+                        <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-12 d-md-none mt-5 d-flex flex-row ">
+                    <div class="footer-items-section">
+                    <h3 class="footer-heading-2">Shop</h3>
+                    <p class="footer-description-2">Men</p>
+                    <p class="footer-description-2">Women</p>
+                    <p class="footer-description-2">Accessories</p>
+                    <p class="footer-description-2">Shoes</p>
+                    <p class="footer-description-2">New Arrivals</p>
+                    <p class="footer-description-2">Sale</p>
+                    </div>
+
+                    <div class="footer-items-section">
+                    <h3 class="footer-heading-2">Company</h3>
+                    <p class="footer-description-2">About Us</p>
+                    <p class="footer-description-2">Careers</p>
+                    <p class="footer-description-2">Press</p>
+                    <p class="footer-description-2">Blog</p>
+                    </div>
+                </div>
+                <div class="col-12 d-md-none mt-5 d-flex flex-row ">
+                    <div class="footer-items-section">
+                        <h3 class="footer-heading-2">Support</h3>
+                        <p class="footer-description-2">Contact Us</p>
+                        <p class="footer-description-2">FAQs</p>
+                        <p class="footer-description-2">Shipping Info</p>
+                        <p class="footer-description-2">Returns</p>
+                        <p class="footer-description-2">Size Guide</p>
+                    
+                    </div>
+
+                    <div class="footer-items-section">
+                        <h3 class="footer-heading-2">NewsLetter</h3>
+                        <p class="footer-description-2">Subscribe to get special offers and updates</p>
+                        
+                        <form>
+
+                        <input type="email" class="form-control border border-secondary rounded" placeholder="Enter your email">
+                        
+                        </form>
+
+                        <button class="footer-subscribe-button">Subscribe</button>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!-- Below code for device whose size>= medium  -->
+
+                <div class="col-12 mt-5 d-flex flex-row flex-wrap d-none d-md-flex ">
+                    <div>
+                        <h2 class="footer-heading">
+                            <span class="footer-logo-icon">
+                                <svg width="30" height="27" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+                                    <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path>
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <path d="M16 10a4 4 0 01-8 0"></path>
+                                </svg>
+                            </span>
+                            StyleSphere</h2>
+                            <p class="footer-description w-75">Discover the latest trends in fashion. Quality meets style at StyleSphere.</p>
+                    
+                        <div class="d-flex flex-row ">                   
+                            <div class="footer-social-icon">
+                            <i class="fa-brands fa-facebook-f "></i>
+                            </div>
+                            <div class="footer-social-icon">
+                            <i class="fa-brands fa-x-twitter"></i>
+                            </div>
+                            <div class="footer-social-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="footer-social-icon">
+                            <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>  
+                    </div>
+                    
+                    <div>
+                        <div class="footer-items-section">
+                        <h3 class="footer-heading-2">Shop</h3>
+                        <p class="footer-description-2">Men</p>
+                        <p class="footer-description-2">Women</p>
+                        <p class="footer-description-2">Accessories</p>
+                        <p class="footer-description-2">Shoes</p>
+                        <p class="footer-description-2">New Arrivals</p>
+                        <p class="footer-description-2">Sale</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="footer-items-section">
+                        <h3 class="footer-heading-2">Company</h3>
+                        <p class="footer-description-2">About Us</p>
+                        <p class="footer-description-2">Careers</p>
+                        <p class="footer-description-2">Press</p>
+                        <p class="footer-description-2">Blog</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="footer-items-section">
+                            <h3 class="footer-heading-2">Support</h3>
+                            <p class="footer-description-2">Contact Us</p>
+                            <p class="footer-description-2">FAQs</p>
+                            <p class="footer-description-2">Shipping Info</p>
+                            <p class="footer-description-2">Returns</p>
+                            <p class="footer-description-2">Size Guide</p>
+                        
+                        </div>
+                    </div>
+                    <div>                  
+                        <div class="footer-items-section">
+                            <h3 class="footer-heading-2 w-50">NewsLetter</h3>
+                            <p class="footer-description-2 ">Subscribe to get special offers and updates</p>
+                            
+                            <form>
+
+                            <input type="email" class="form-control border border-secondary rounded" placeholder="Enter your email">
+                            
+                            </form>
+
+                            <button class="footer-subscribe-button">Subscribe</button>
+                        </div>
+                    </div>
+                
+
+
+                </div>
+
+                <div class="col-12">
+                    <hr class="footer-hr-line">
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                            <p class="footer-description ">© 2024 StyleSphere7321. All rights reserved.</p>
+                            <div class="d-flex flex-row">
+                                <p class="footer-description me-2">Privacy Policy </p>
+                                <p class="footer-description">Terms of Service </p>
+                                
+                            </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
