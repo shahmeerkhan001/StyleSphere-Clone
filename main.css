@@ -15,15 +15,16 @@
 }
 
 .nav-logo-icon{
-    box-sizing: border-box;
+   
     padding:4px;
     min-height:35px;
     min-width: 39px;
-    margin-right:5px;
+    
     background-color:rgb(0, 109, 188);
     border-radius:9px;
 
 }
+
 
 
 .nav-icon-hover {
@@ -49,6 +50,8 @@
 
     background-color: #ced2d3;
 }
+
+
 
 
 
